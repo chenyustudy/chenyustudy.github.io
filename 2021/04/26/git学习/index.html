@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>我的第一篇博客文章 | 星辰大海</title>
+  <title>git学习 | 星辰大海</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章">
-<meta property="og:url" content="http://example.com/2021/04/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+  <meta name="description" content="git介绍  是一个分布式版本控制工具 VS 集中式版本控制工具 GIT的命令 基于开发案例，详细讲解了git的命令 Git的分支 分支特性，分支创建，分支转换，分支合并，代码合并冲突解决 idea 集成git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git学习">
+<meta property="og:url" content="http://example.com/2021/04/26/git%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="星辰大海">
+<meta property="og:description" content="git介绍  是一个分布式版本控制工具 VS 集中式版本控制工具 GIT的命令 基于开发案例，详细讲解了git的命令 Git的分支 分支特性，分支创建，分支转换，分支合并，代码合并冲突解决 idea 集成git">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-04-24T02:56:10.000Z">
-<meta property="article:modified_time" content="2021-04-25T05:35:26.769Z">
+<meta property="article:published_time" content="2021-04-26T01:48:23.000Z">
+<meta property="article:modified_time" content="2021-04-26T13:01:18.070Z">
 <meta property="article:author" content="晨曦宇宙">
 <meta name="twitter:card" content="summary">
   
@@ -152,27 +154,118 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客文章" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-git学习" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇博客文章
+      git学习
     </h1>
   
 
         
-        <a href="/2021/04/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2021-04-24T02:56:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-24</time>
+        <a href="/2021/04/26/git%E5%AD%A6%E4%B9%A0/" class="archive-article-date">
+  	<time datetime="2021-04-26T01:48:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>git介绍  是一个分布式版本控制工具 VS 集中式版本控制工具</p>
+<p>GIT的命令 基于开发案例，详细讲解了git的命令</p>
+<p>Git的分支 分支特性，分支创建，分支转换，分支合并，代码合并冲突解决</p>
+<p>idea 集成git</p>
+<span id="more"></span>
+
+<blockquote>
+<p>git 介绍</p>
+</blockquote>
+<p>Git是一个免费的，开源的分布式版本控制系统，可以快速高效地处理从小型到大型的各种项目。</p>
+<p>Git易于学习，占地面积小，性能极快，它具有廉价的本地库，方便的暂存区域和多个工作流分支等特性，</p>
+<p>其性能优于Subversion,CVS，Perforce 和ClearCase等版本控制工具。</p>
+<blockquote>
+<p>何为版本控制</p>
+</blockquote>
+<p>版本控制是一种记录文件内容变化，以便将来查阅特定版本修订情况的系统。</p>
+<p>版本控制其实最重要的是可以记录文件修改历史记录，从而让用户能够查看历史版本方便版本切换</p>
+<blockquote>
+<p>git常用命令</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>命令名称</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>git config –global user.name 用户名</td>
+<td>设置用户签名</td>
+</tr>
+<tr>
+<td>git config –global user.email 邮箱</td>
+<td>设置用户邮箱</td>
+</tr>
+<tr>
+<td>git init</td>
+<td>初始化本地库</td>
+</tr>
+<tr>
+<td>git status</td>
+<td>查看本地库状态</td>
+</tr>
+<tr>
+<td>git add 文件名</td>
+<td>添加到暂存区</td>
+</tr>
+<tr>
+<td>git commit -m “日志信息” 文件名</td>
+<td>提交到本地库</td>
+</tr>
+<tr>
+<td>git reflog</td>
+<td>查看历史记录</td>
+</tr>
+<tr>
+<td>git reset –hard 版本号</td>
+<td>版本穿梭</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>分支的操作</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>命令名称</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>git branch 分支名</td>
+<td>创建分支</td>
+</tr>
+<tr>
+<td>git branch -v</td>
+<td>查看分支</td>
+</tr>
+<tr>
+<td>git checkout 分支名</td>
+<td>切换分支</td>
+</tr>
+<tr>
+<td>git merge 分支名</td>
+<td>把指定的分支合并到当前分支上</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>远程库别名</p>
+</blockquote>
+<p>查看当前库别名  git remote -v</p>
+
       
 
       
@@ -251,7 +344,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/26/git%E5%AD%A6%E4%B9%A0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,18 +358,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/04/24/Spring%E5%AD%A6%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Spring学习
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/04/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2021/04/24/Spring%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Spring学习</div>
       <i class="icon-circle-right"></i>
     </a>
   
