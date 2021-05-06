@@ -8,17 +8,19 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>Spring学习 | 星辰大海</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我的springxuexi">
+  <meta name="description" content="简单谈谈对Spring的理解  Spring 它是一个框架，在我们的开发流程中，所有的框架生产都依赖于Spring，Spring帮我们起到于IOC容器的作用，用来承载我们的Bean对象 ，它帮我们进行了整个对象在创建到销毁的整个周期的管理，我们在使用Spring的时候，可以使用配置文件，也可以使用注解的方式来进行相关实现，但是当我们程序开始启动之后，我要把注解和配置文件定义好的bean对象转化成">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Spring学习">
 <meta property="og:url" content="http://example.com/2021/04/24/Spring%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="星辰大海">
-<meta property="og:description" content="我的springxuexi">
+<meta property="og:description" content="简单谈谈对Spring的理解  Spring 它是一个框架，在我们的开发流程中，所有的框架生产都依赖于Spring，Spring帮我们起到于IOC容器的作用，用来承载我们的Bean对象 ，它帮我们进行了整个对象在创建到销毁的整个周期的管理，我们在使用Spring的时候，可以使用配置文件，也可以使用注解的方式来进行相关实现，但是当我们程序开始启动之后，我要把注解和配置文件定义好的bean对象转化成">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2021/04/24/Spring%E5%AD%A6%E4%B9%A0/image-20210427104239596.png">
 <meta property="article:published_time" content="2021-04-24T14:09:53.000Z">
-<meta property="article:modified_time" content="2021-04-25T07:14:19.969Z">
+<meta property="article:modified_time" content="2021-04-27T02:43:40.427Z">
 <meta property="article:author" content="晨曦宇宙">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/04/24/Spring%E5%AD%A6%E4%B9%A0/image-20210427104239596.png">
   
     <link rel="alternative" href="/atom.xml" title="星辰大海" type="application/atom+xml">
   
@@ -174,7 +176,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>我的springxuexi</p>
+        <blockquote>
+<p>简单谈谈对Spring的理解</p>
+</blockquote>
+<p>Spring 它是一个框架，在我们的开发流程中，所有的框架生产都依赖于Spring，Spring帮我们起到于IOC容器的作用，用来承载我们的Bean对象 ，它帮我们进行了整个对象在创建到销毁的整个周期的管理，我们在使用Spring的时候，可以使用配置文件，也可以使用注解的方式来进行相关实现，但是当我们程序开始启动之后，我要把注解和配置文件定义好的bean对象转化成BeanDefinition，然后要完成整个BeanDefinition的解析跟加载过程，当我获取这些完整的对象之后，下一步要去对整个BeanDefinition进行实例化操作，在进行实例化的时候，最简单的方式，就是进行反射的方式来创建对象，创建完对象之后，只是在堆里面开辟了一块空间，并没用完成一系列初始化操作，所以在后面才会实现<strong>Aware</strong>接口的一些相关操作，包括实现一些初始化方法的操作 ，包括如果要实现AOP的话可能要执行一些BeanPostProcessor，包括在刚刚的BeanDefinition的环节也会去创建一些BeanFactoryPostProcessor来实现相关的扩展工作，当我们整体对象创建完成之后，对象就可以直接调用了。</p>
+<p><img src="/2021/04/24/Spring%E5%AD%A6%E4%B9%A0/image-20210427104239596.png" alt="image-20210427104239596"></p>
 
       
 
